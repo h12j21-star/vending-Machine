@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+*{
+  font-family: 
+  'Noto Sans KR';
+}
+.blind{
+  position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+input{
+  padding:0;
+  margin:0;
+  border:0;
+
+}
+button{
+  padding:0;
+  border-radius: 5px;
+  outline:0;
+  border:0;
+  
+  cursor:pointer;
+}
+body{
+  background-color: #EAE8FE;
+  margin:0 auto;
+  text-align: center;
+}
+.vending-header{
+  display: flex;
+  margin: 0 auto;
+  width:386px;
+  height:169px;
+  background:url("/images/logo.png") center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.wrapper{
+  margin:80px auto;
+  width:800px;
+  height:545px;
+  display: grid;
+  grid-template-areas:
+    "vending-wrapper total-money"
+    "vending-wrapper beverage-obtain-list"
+}
+.vending-wrapper{
+  margin: 0px auto;
+  width:360px;
+  height:545px;
+  background-color: #fff;
+  box-sizing: border-box;
+  grid-area:vending-wrapper;
+
+}
+.vending-wrapper .vending-beverage{
+  padding:31px 27px 0px 27px;
+
+}
+.vending-beverage .check-beverage{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.check-beverage .beverage{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width:93px;
+  height:130px;
+  border-radius: 10px;
+  border:1px solid #ddd;
+  margin-bottom:12px;
+ }
+ .check-beverage .beverage.sold{
+  position:relative;
+ }
+ .check-beverage .beverage.sold::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius: 8px;
+  background-color: #000000;
+  background-image: url("/images/Sold-out.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  opacity: 80%;
+}
+
+.check-beverage li:hover{
+  border-radius: 10px;
+  outline: 3px solid #6327FE;
+  box-sizing: border-box;
+}
+.check-beverage .check-button {
+  margin:0 auto;
+  text-align: center;
+  background-color: #fff;
+  
+}
+.check-beverage figure{
+ display:flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+.check-beverage img{
+  width:36px;
+  height:65px;
+
+}
+.check-beverage figcaption{
+  width:73px;
+  font-size: 9px;
+  margin-top:10px;
+}
+.check-beverage button{
+  width:70px;
+  height:22px;
+  background-color: #6327FE;
+  border-radius: 50px;
+  color:#fff;
+}
+.vending-payment{
+  display:flex;
+  flex-wrap: wrap;
+  padding:0 27px; 
+}
+.vending-payment .payment-return{
+  display: flex;
+  margin-bottom: 11px;
+}
+.vending-payment .payment-return p{
+ 
+  width:200px;
+  height:33px;
+  font-size: 14px;
+  border:0;
+  background-color: #EAE8FE;
+  margin-right:12px;
+  text-align: left;
+  padding:10px 10px 7px 10px;
+  border-radius: 8px;
+}
+.vending-payment .payment-return button{
+ width:94px;
+ height:33px;
+ background-color: white;
+ border:1px solid #ddd;
+}
+.vending-payment .payment-input{
+  display: flex;
+  margin-bottom: 11px;
+}
+.vending-payment .payment-input input{
+  
+  width:200px;
+  height:33px;
+  margin-right: 12px;
+  border-radius: 8px;
+  padding:6px 8px 6px; 
+  border:1px solid #ddd;
+}
+.vending-payment .payment-input button{
+  width:94px;
+ height:33px;
+ background-color: white;
+ border:1px solid #ddd;
+
+}
+.vending-payment .beverage-obtain{
+  display: flex;
+ 
+}
+.beverage-obtain .obtain-list{
+  width:200px;
+  height:106px;
+  background-color: #EAE8FE;
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius: 8px;
+  margin-right: 12px;
+  overflow-y: scroll;
+  
+}
+
+.obtain-list::-webkit-scrollbar{
+  width:4px;
+
+ } 
+ .obtain-list::-webkit-scrollbar-thumb{
+ height:50px;
+ background-color:#fff;
+ border-radius:50px;
+ 
+ } 
+
+.obtain-list li{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:6px;
+  width:170px;
+  height:46px;
+  border:1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+  padding:6px 8px 7px 10px;
+  background-color: #fff;
+}
+.obtain-list figure{
+  display:flex;
+  align-items: center;
+  gap:12px;
+}
+.obtain-list img{
+  width:18px;
+  height:33px;
+ 
+}
+.obtain-list figcaption{
+  font-size:9px;
+  font-weight:500;
+}
+.obtain-list div{
+  font-size:14px;
+  font-weight:500;
+  width:30px;
+  height:30px;
+  border:1px solid #bdbdbd;
+  border-radius: 5px;
+
+}
+.beverage-obtain button{
+  width:94px;
+  height:106px;
+  background-color: #6327FE;
+  border:0;
+  outline:0;
+  font-weight:700;
+  color:white;
+}
+.total-money{
+ width:360px;
+ height:50px;
+ background-color: #fff;
+ grid-area:total-money;
+ padding:9px 27px;
+}
+.total-money .cont-total_money{
+  
+  width:306px;
+  height:32px;
+  background-color: #EAE8FE;
+  border-radius: 8px;
+  text-align: left;
+  padding:8px 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.beverage-obtain-list{
+  grid-area:beverage-obtain-list;
+  width:360px;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.beverage-obtain-list::-webkit-scrollbar{
+  margin-top:9px;
+  width:4px;
+  margin-top:4px;
+ } 
+ .beverage-obtain-list::-webkit-scrollbar-thumb{
+ height:79px;
+ background-color:#fff;
+ border-radius:50px;
+ 
+ } 
+.beverage-obtain-list .obtain-beverage{
+  margin:24px 135px 20px 135px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.beverage-obtain-list .obtain-beverage-list{
+  width:306px;
+  height:364px;
+  background-color: #EAE8FE;
+  padding:12px;
+  margin:12px auto;
+  border-radius: 8px;
+  border:1px solid #ddd;
+}
+.obtain-beverage-list li{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width:276px;
+  height:46px;
+  background-color: #fff;
+  margin-bottom:6px;
+  padding:6.04px 8px 7.04px 10.04px;
+  border-radius: 8px;
+
+}
+.obtain-beverage-list li img{
+  width:17.93px;
+  height:32.93px;
+}
+.obtain-beverage-list li figure{
+  display:flex;
+  align-items: center;
+  gap:20px;
+
+}
+.obtain-beverage-list li figcaption{
+  font-size:9px;
+  font-weight: 500;
+}
+.obtain-beverage-list li div{
+  text-align: center;
+  width:30px;
+  height:30px;
+  border-radius: 5px;
+  border:1px solid #ddd;
+
+
+}
+.beverage-obtain-list .sum-money{
+  padding:0 100px;
+  width:360px;
+  height:20px;
+  text-align: right;
+  font-size: 12px;
+  
+  
+}
