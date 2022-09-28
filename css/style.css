@@ -346,3 +346,31 @@ body{
   
   
 }
+@media screen and (max-width:4500px){
+  .vending-header{
+    grid-auto-flow:column;
+    width:166px;
+    height:71.12px;
+  }
+
+
+  .wrapper{
+    width:360px;
+    height:1167px;
+    margin:0 auto;
+    text-align: center;
+    display:block;
+  
+
+}
+  .vending-wrapper{
+    margin:18px auto 0;
+  
+  }
+  .total-money{
+  
+  }
+  .beverage-obtain-list{
+   
+  }
+}
