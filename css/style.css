@@ -346,7 +346,7 @@ body{
   
   
 }
-@media screen and (max-width:4500px){
+@media screen and (max-width:450px){
   .vending-header{
     grid-auto-flow:column;
     width:166px;
@@ -366,11 +366,5 @@ body{
   .vending-wrapper{
     margin:18px auto 0;
   
-  }
-  .total-money{
-  
-  }
-  .beverage-obtain-list{
-   
   }
 }
