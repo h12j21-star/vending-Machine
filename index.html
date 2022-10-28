@@ -5,112 +5,147 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>벤딩머신</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="vending-header">
       <h1 class="blind">벤딩머신 로고</h1>
     </header>
     <main class="wrapper">
-    <div class="vending-wrapper">
-      <section class="vending-beverage">
-        <h2 class="blind">음료 선택하기</h2>
-        <ul class="check-beverage">
-          <li class="beverage"><figure><img src="./images/Original_Cola.png" alt="오리지널 콜라"><figcaption>Original_Cola</figcaption></figure><button >1000원</button></li>
-          <li class="beverage sold"><figure><img src="./images/Violet_Cola.png" alt="보라색 콜라"><figcaption>Violet_Cola</figcaption></figure><button>1000원</button></li>
-          <li class="beverage"><figure><img src="./images/Yellow_Cola.png" alt="노란색 콜라"><figcaption>Yellow_Cola</figcaption></figure><button>1000원</button></li>
-          <li class="beverage"><figure><img src="./images/Cool_Cola.png" alt="하늘색 콜라"><figcaption>Cool_Cola</figcaption></figure><button >1000원</button></li>
-          <li class="beverage"><figure><img src="./images/Green_Cola.png" alt="초록색 콜라"><figcaption>Green_Cola</figcaption></figure><button>1000원</button></li>
-          <li class="beverage"><figure><img src="./images/Orange_Cola.png" alt="오렌지색 콜라"><figcaption>Orange_Cola</figcaption></figure><button>1000원</button></li>
-        </ul>
-      </section>
-      <section class="vending-payment">
-        <h2  class="blind">거스름돈 반환, 입금, 획득</h2>
-        
-          <div class="payment-return">
-            <p>잔액:</p>
-          <button type="submit">거스름돈 반환</button>
-        </div>
-        <form class="payment-input" action="index2.html" method="get">
-          <input type="text" placeholder="입금액입력"/>
-          <button type="submit">입금</button>
-        </form>
-       <form class="beverage-obtain" action="index2.html" method="get">
-          <ul class="obtain-list">
-            <li>
-            <figure>
-               <img src="./images/Original_Cola.png" alt="오리지널 콜라">
-               <figcaption>Original_Cola</figcaption>
-            </figure>
-             <div></div>
+      <div class="vending-wrapper">
+        <section class="vending-beverage">
+          <h2 class="blind">음료 선택하기</h2>
+          <ul class="check-beverage">
+            <li class="beverage">
+              <figure>
+                <img src="./images/Original_Cola.png" alt="오리지널 콜라" />
+                <figcaption>Original_Cola</figcaption>
+              </figure>
+              <button>1000원</button>
             </li>
-            <li>
-            <figure>
-                <img src="./images/Green_Cola.png" alt="초록색 콜라">
-                <figcaption>Green_Cola</figcaption>
-            </figure>
-              <div></div>
-            </li>
-            <li>
-             <figure>
-                <img src="./images/Orange_Cola.png" alt="오렌지색 콜라">
-               <figcaption>Orange_Cola</figcaption>
-             </figure>
-             <div></div>
-            </li>
-            <li>
-            <figure>
-                <img src="./images/Violet_Cola.png" alt="보라색 콜라">
+            <li class="beverage sold">
+              <figure>
+                <img src="./images/Violet_Cola.png" alt="보라색 콜라" />
                 <figcaption>Violet_Cola</figcaption>
-            </figure>
-              <div></div>
+              </figure>
+              <button>1000원</button>
+            </li>
+            <li class="beverage">
+              <figure>
+                <img src="./images/Yellow_Cola.png" alt="노란색 콜라" />
+                <figcaption>Yellow_Cola</figcaption>
+              </figure>
+              <button>1000원</button>
+            </li>
+            <li class="beverage">
+              <figure>
+                <img src="./images/Cool_Cola.png" alt="하늘색 콜라" />
+                <figcaption>Cool_Cola</figcaption>
+              </figure>
+              <button>1000원</button>
+            </li>
+            <li class="beverage">
+              <figure>
+                <img src="./images/Green_Cola.png" alt="초록색 콜라" />
+                <figcaption>Green_Cola</figcaption>
+              </figure>
+              <button>1000원</button>
+            </li>
+            <li class="beverage">
+              <figure>
+                <img src="./images/Orange_Cola.png" alt="오렌지색 콜라" />
+                <figcaption>Orange_Cola</figcaption>
+              </figure>
+              <button>1000원</button>
             </li>
           </ul>
-          <button type="submit">획득</button>
-       </form> 
+        </section>
+        <section class="vending-payment">
+          <h2 class="blind">거스름돈 반환, 입금, 획득</h2>
+
+          <div class="payment-return">
+            <p>잔액:</p>
+            <button type="submit">거스름돈 반환</button>
+          </div>
+          <form class="payment-input" action="index2.html" method="get">
+            <input type="text" placeholder="입금액입력" />
+            <button type="submit">입금</button>
+          </form>
+          <form class="beverage-obtain" action="index2.html" method="get">
+            <ul class="obtain-list">
+              <li>
+                <figure>
+                  <img src="./images/Original_Cola.png" alt="오리지널 콜라" />
+                  <figcaption>Original_Cola</figcaption>
+                </figure>
+                <div></div>
+              </li>
+              <li>
+                <figure>
+                  <img src="./images/Green_Cola.png" alt="초록색 콜라" />
+                  <figcaption>Green_Cola</figcaption>
+                </figure>
+                <div></div>
+              </li>
+              <li>
+                <figure>
+                  <img src="./images/Orange_Cola.png" alt="오렌지색 콜라" />
+                  <figcaption>Orange_Cola</figcaption>
+                </figure>
+                <div></div>
+              </li>
+              <li>
+                <figure>
+                  <img src="./images/Violet_Cola.png" alt="보라색 콜라" />
+                  <figcaption>Violet_Cola</figcaption>
+                </figure>
+                <div></div>
+              </li>
+            </ul>
+            <button type="submit">획득</button>
+          </form>
+        </section>
+      </div>
+      <section class="total-money">
+        <h2 class="blind">소지금</h2>
+        <p class="cont-total_money">소지금:</p>
       </section>
-    </div>
-    <section class="total-money">
-      <h2 class="blind">소지금</h2>
-      <p class="cont-total_money">소지금:</p>
-    </section>
-    <section class="beverage-obtain-list">
-      <h2 class="blind">획득한 음료 목록,총금액</h2>
-      <p class="obtain-beverage">획득한 음료</p>
-      <ul class="obtain-beverage-list">
-        <li>
-         <figure>
-           <img src="./images/Original_Cola.png" alt="오리지널 콜라">
-           <figcaption>Original_Cola</figcaption>
-         </figure>
-         <div></div>
-        </li>
-        <li>
-          <figure>
-            <img src="/images/Green_Cola.png" alt="초록색콜라">
-            <figcaption>Green_Cola</figcaption>
-          </figure>
-          <div></div>
-        </li>
-        <li>
-          <figure>
-            <img src="./images/Orange_Cola.png" alt="오렌지색콜라">
-           <figcaption>Orange_Cola</figcaption>
-          </figure>
-         <div></div>
-        </li>
-        <li>
-          <figure>
-            <img src="./images/Violet_Cola.png" alt="보라색콜라">
-            <figcaption>Violet_Cola</figcaption>
-          </figure>
-          <div></div>
-        </li>
-      </ul>
-      <p class="sum-money">총금액:</p>
-    </section>
-  </main>
-    </body>
+      <section class="beverage-obtain-list">
+        <h2 class="blind">획득한 음료 목록,총금액</h2>
+        <p class="obtain-beverage">획득한 음료</p>
+        <ul class="obtain-beverage-list">
+          <li>
+            <figure>
+              <img src="./images/Original_Cola.png" alt="오리지널 콜라" />
+              <figcaption>Original_Cola</figcaption>
+            </figure>
+            <div></div>
+          </li>
+          <li>
+            <figure>
+              <img src="./images/Green_Cola.png" alt="초록색콜라" />
+              <figcaption>Green_Cola</figcaption>
+            </figure>
+            <div></div>
+          </li>
+          <li>
+            <figure>
+              <img src="./images/Orange_Cola.png" alt="오렌지색콜라" />
+              <figcaption>Orange_Cola</figcaption>
+            </figure>
+            <div></div>
+          </li>
+          <li>
+            <figure>
+              <img src="./images/Violet_Cola.png" alt="보라색콜라" />
+              <figcaption>Violet_Cola</figcaption>
+            </figure>
+            <div></div>
+          </li>
+        </ul>
+        <p class="sum-money">총금액:</p>
+      </section>
+    </main>
   </body>
 </html>
