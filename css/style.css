@@ -27,7 +27,6 @@ button{
   border-radius: 5px;
   outline:0;
   border:0;
-  
   cursor:pointer;
 }
 body{
@@ -40,7 +39,7 @@ body{
   margin: 0 auto;
   width:386px;
   height:169px;
-  background:url("/images/logo.png") center;
+  background:url("../images/logo.png") center;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -93,8 +92,9 @@ body{
   inset:0;
   border-radius: 8px;
   background-color: #000000;
-  background-image: url("/images/Sold-out.svg");
+  background-image: url("../images/Sold-out.png");
   background-repeat: no-repeat;
+  background-size:58px 42px;
   background-position:center;
   opacity: 80%;
 }
@@ -193,9 +193,8 @@ body{
   border-radius: 8px;
   margin-right: 12px;
   overflow-y: scroll;
-  
+  overflow-x: hidden;
 }
-
 .obtain-list::-webkit-scrollbar{
   width:4px;
 
@@ -235,13 +234,15 @@ body{
   font-weight:500;
 }
 .obtain-list div{
-  font-size:14px;
-  font-weight:500;
+  font-size:16px;
+  font-weight:700;
   width:30px;
   height:30px;
   border:1px solid #bdbdbd;
   border-radius: 5px;
-
+  text-align: center;
+  padding-top: 5px;
+  
 }
 .beverage-obtain button{
   width:94px;
@@ -269,6 +270,10 @@ body{
   padding:8px 10px;
   font-size: 14px;
   font-weight: 500;
+}
+.cont-total_money span{
+  font-weight:bold;
+  margin-left:180px;
 }
 .beverage-obtain-list{
   grid-area:beverage-obtain-list;
